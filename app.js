@@ -19,9 +19,9 @@ function Reset()
     mins = 0;
     secs = 0;
     milisecs = 0;
-    document.getElementById("min").innerHTML = mins;
-    document.getElementById("secs").innerHTML = secs;
-    document.getElementById("milisec").innerHTML = milisecs;
+    document.getElementById("min").innerHTML = "00";
+    document.getElementById("secs").innerHTML = "00";
+    document.getElementById("milisec").innerHTML = "00";
 }
 function stopWatch()
 {
