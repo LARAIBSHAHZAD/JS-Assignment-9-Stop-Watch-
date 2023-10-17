@@ -1,6 +1,7 @@
 var mins = 0;
 var secs = 0;
 var milisecs = 0;
+var btn =document.getElementById('button1');
 
 var timer = false;
 
@@ -12,6 +13,8 @@ function Start()
 function Stop()
 {
     timer = false;
+    btn.disabled = false;
+    btn.innerHTML = "RESUME";
 }
 function Reset()
 {
@@ -41,4 +44,6 @@ function stopWatch()
 
         setTimeout("stopWatch()", 10)
     }
+    btn.disabled = true;
+    btn.innerHTML = "START";
 }
